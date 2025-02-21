@@ -15,7 +15,7 @@ import javax.inject.Singleton
 @DisableInstallInCheck
 object SubcomponentsModule
 
-@Component(modules = [SubcomponentsModule::class, AnalyticsModule::class])
+@Component(modules = [SubcomponentsModule::class, AnalyticsModule::class, UserModule::class])
 @Singleton
 interface AppComponent {
     @Component.Factory

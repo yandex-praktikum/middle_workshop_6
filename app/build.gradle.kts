@@ -20,20 +20,6 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    flavorDimensions += "type"
-    productFlavors {
-        create("teach") {
-            dimension = "type"
-        }
-        create("task") {
-            isDefault = true
-            dimension = "type"
-        }
-        create("result") {
-            dimension = "type"
-        }
-    }
-
     buildTypes {
         release {
             isMinifyEnabled = false
