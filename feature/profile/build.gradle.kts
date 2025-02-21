@@ -2,7 +2,6 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    alias(libs.plugins.hilt.android)
     alias(libs.plugins.ksp)
 }
 
@@ -33,12 +32,10 @@ dependencies {
     implementation(project(":core:analytics"))
     implementation(project(":data:user"))
 
-    implementation(libs.androidx.hilt.navigation.compose)
+    implementation(libs.androidx.lifecycle.viewmodel.android)
+    implementation(libs.androidx.navigation.runtime.ktx)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.material3)
-
-    implementation(libs.hilt.android)
-    ksp(libs.hilt.compiler)
 
     implementation(libs.dagger)
     ksp(libs.google.dagger.compiler)

@@ -2,7 +2,6 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    alias(libs.plugins.hilt.android)
     alias(libs.plugins.ksp)
 }
 
@@ -48,7 +47,6 @@ dependencies {
 
     implementation(project(":feature:profile"))
 
-    implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -68,6 +66,4 @@ dependencies {
 
     implementation(libs.dagger)
     ksp(libs.google.dagger.compiler)
-    implementation(libs.hilt.android)
-    ksp(libs.hilt.compiler)
 }
