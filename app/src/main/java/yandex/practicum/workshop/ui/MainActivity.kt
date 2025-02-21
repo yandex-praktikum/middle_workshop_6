@@ -25,7 +25,6 @@ import androidx.navigation.compose.rememberNavController
 import kotlinx.coroutines.launch
 import yandex.practicum.workshop.WorkshopApplication
 
-//@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -41,10 +41,9 @@ android {
 }
 
 dependencies {
-    implementation(project(":core:analytics"))
+    implementation(project(":core:userprefs"))
     implementation(project(":data:user"))
     implementation(project(":feature:login"))
-
     implementation(project(":feature:profile"))
 
     implementation(libs.androidx.navigation.compose)

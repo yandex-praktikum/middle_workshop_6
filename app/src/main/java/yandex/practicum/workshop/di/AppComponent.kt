@@ -4,7 +4,6 @@ import android.content.Context
 import dagger.BindsInstance
 import dagger.Component
 import dagger.Module
-import yandex.practicum.workshop.user.di.AnalyticsModule
 import javax.inject.Singleton
 
 
@@ -13,7 +12,7 @@ import javax.inject.Singleton
 )
 object SubcomponentsModule
 
-@Component(modules = [SubcomponentsModule::class, AnalyticsModule::class, UserModule::class])
+@Component(modules = [SubcomponentsModule::class, UserPrefsModule::class, UserModule::class])
 @Singleton
 interface AppComponent {
     @Component.Factory

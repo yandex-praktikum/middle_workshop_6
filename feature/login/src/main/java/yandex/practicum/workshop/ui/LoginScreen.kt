@@ -36,6 +36,7 @@ fun LoginScreen(
         Spacer(Modifier.weight(1f))
         TextField(value = name,
             onValueChange = { name = it },
+            maxLines = 1,
             placeholder = { Text("Введите ваше имя") })
         Spacer(Modifier.weight(1f))
         Button(onClick = {
