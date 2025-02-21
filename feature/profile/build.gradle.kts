@@ -32,10 +32,10 @@ dependencies {
     implementation(project(":core:userprefs"))
     implementation(project(":data:user"))
 
+    implementation(libs.androidx.lifecycle.viewmodel.android)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.material3)
 
     implementation(libs.dagger)
-    implementation(libs.androidx.lifecycle.viewmodel.android)
     ksp(libs.google.dagger.compiler)
 }
